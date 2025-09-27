@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Kalighat (Kolkata)",
+    "state": "West Bengal",
+    "short": "One of the well-known Shakti Peethas — associated with the toe of Sati in some traditions.",
+    "long": "Kalighat Kali Temple in Kolkata is a major Shakti Peetha. It is associated with Maa Kali and has deep cultural and historical importance in Bengal. Fill this with more historical and pilgrimage information."
+  },
+  {
+    "id": 2,
+    "name": "Kamakhya (Guwahati)",
+    "state": "Assam",
+    "short": "An important tantric Shakti Peetha located on Nilachal Hill.",
+    "long": "Kamakhya is famed for its tantric traditions and the annual Ambubachi Mela. The temple is devoted to the Goddess and is a major pilgrimage site."
+  },
+  {
+    "id": 3,
+    "name": "Kanyakumari (Cape Comorin)",
+    "state": "Tamil Nadu",
+    "short": "Southernmost Shakti Peetha — world-famous pilgrimage spot.",
+    "long": "Kanyakumari is the place where the body part of the Goddess is said to have fallen in some accounts. It is also a famous tourist location with the Vivekananda Rock Memorial nearby."
+  }
+]
