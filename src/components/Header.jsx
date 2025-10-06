@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Slider from "react-slick";
 
-import durgaImg from "../assets/gallery/mahishamadini.jpg";
-import dasharaVideo from "../assets/gallery/Navratri.mp4";
+import durgaImg from "../assets/gallery/mahishasura mardini.png";
+import navratriVideo from "../assets/gallery/Navratri.mp4";
 
 const Header = () => {
   const [videoStarted, setVideoStarted] = useState(false);
-  const [videoEndedOnce, setVideoEndedOnce] = useState(false);
+  const [setVideoEndedOnce] = useState(false);
   const [muted, setMuted] = useState(false);
   const sliderRef = useRef(null);
   const videoRef = useRef(null);
@@ -54,40 +54,47 @@ const Header = () => {
           <div className="w-80 md:w-full lg:h-[35rem] lg:w-[40rem] relative">
             <Slider ref={sliderRef} {...settings}>
               {/* Slide 1 - Video */}
+              {/* Slide 1 - Video */}
               <div className="relative">
                 <video
                   ref={videoRef}
-                  src={dasharaVideo}
-                  autoPlay={false} // autoplay handled manually
-                  muted={!videoStarted || muted}
+                  src={navratriVideo}
+                  muted={muted}
                   className="rounded-lg w-full h-[35rem] object-cover"
                   onEnded={handleVideoEnd}
                 />
+
+                {/* Overlay play button (only before start) */}
                 {!videoStarted && (
                   <button
                     onClick={handlePlayClick}
-                    className="absolute inset-0 flex items-center justify-center bg-black/50 text-white font-bold text-lg rounded-lg"
+                    className="absolute inset-0 flex items-center justify-center bg-black/50 text-white font-bold text-3xl rounded-lg"
                   >
-                    &#x25B7;
+                    ▶️
                   </button>
                 )}
 
-                {/* Custom controls */}
+                {/* Custom Controls (once video starts) */}
                 {videoStarted && (
-                  <div className="absolute bottom-4 left-4 flex space-x-4 bg-black/50 p-2 rounded-md">
+                  <div className="absolute bottom-4 left-4 flex space-x-4 bg-black/60 p-3 rounded-lg backdrop-blur-md">
                     <button
-                      onClick={() => videoRef.current.pause()}
-                      className="text-white px-2"
+                      onClick={() => {
+                        if (videoRef.current.paused) {
+                          videoRef.current.play();
+                        } else {
+                          videoRef.current.pause();
+                        }
+                        setVideoStarted(!videoRef.current.paused);
+                      }}
+                      className="text-white text-lg font-semibold"
                     >
-                      ⏸️ Pause
+                      {videoRef.current?.paused ? "▶️ Play" : "⏸️ Pause"}
                     </button>
+
                     <button
-                      onClick={() => videoRef.current.play()}
-                      className="text-white px-2"
+                      onClick={toggleMute}
+                      className="text-white text-lg font-semibold"
                     >
-                      ▶️ Play
-                    </button>
-                    <button onClick={toggleMute} className="text-white px-2">
                       {muted ? "🔇 Unmute" : "🔊 Mute"}
                     </button>
                   </div>
@@ -113,7 +120,7 @@ const Header = () => {
           transition={{ duration: 1 }}
         >
           <h1 className="text-3xl font-bold mb-2 text-orange-600">
-            Welcome to Dashara Stories
+            Welcome to Divine Forms of Parvathi Devi & Shakti Traditions
           </h1>
           <p className="mb-4 text-gray-700">
             A small site to collect the stories, legends and pilgrim information

@@ -15,66 +15,106 @@ const mahavidyas = [
   {
     goddess: "Kali",
     color: "bg-gray-200",
-    meaning: "Goddess of time and transformation.",
+    description:
+      "The supreme goddess of time, change, and destruction. She destroys evil and liberates souls from the cycle of birth and death.",
     image: kaliImg,
+    direction: "South",
+    preposition: "Beyond Time",
   },
   {
     goddess: "Tara",
     color: "bg-blue-100",
-    meaning: "Savior goddess, compassionate guide.",
+    description:
+      "The compassionate guide who offers protection and knowledge. Tara removes fear and grants salvation.",
+    direction: "North",
+    preposition: "Guide",
     image: taraImg,
   },
   {
     goddess: "Tripura Sundari (Shodashi)",
     color: "bg-pink-100",
-    meaning: "Supreme beauty and bliss.",
+    description:
+      "The Beautiful Goddess of the Three Worlds. Embodiment of beauty, bliss, and the ultimate truth.",
+    direction: "Center",
+    preposition: "Supreme Beauty & Bliss",
     image: tripuraSundariImg,
   },
   {
     goddess: "Bhuvaneshwari",
     color: "bg-yellow-100",
-    meaning: "Queen of the universe.",
+    description:
+      "The Queen of the Universe, who governs creation and cosmic order. She embodies the vastness of space.",
+    direction: "East",
+    preposition: "Space & Creation",
     image: bhuvaneshwariImg,
   },
   {
     goddess: "Bhairavi",
     color: "bg-red-200",
-    meaning: "Terrifying power of divine wrath.",
+    description:
+      "The fierce goddess of divine wrath, discipline, and transformation. She represents spiritual awakening.",
+    direction: "Southeast",
+    preposition: "Discipline & Energy",
     image: bhairaviImg,
   },
   {
     goddess: "Chinnamasta",
     color: "bg-purple-100",
-    meaning: "Self-sacrifice and transcendence.",
+    description:
+      "The self-decapitated goddess symbolizing self-sacrifice, detachment, and transcendence of ego.",
+    direction: "Northwest",
+    preposition: "Self-Sacrifice and transcendence",
     image: chinnamastaImg,
   },
   {
     goddess: "Dhumavati",
     color: "bg-gray-300",
-    meaning: "Widow goddess, symbol of detachment.",
+    description:
+      "The widow goddess representing detachment, letting go, and the void. She teaches wisdom through loss.",
+    direction: "Southwest",
+    preposition: "Detachment & Wisdom",
     image: dhumavatiImg,
   },
   {
     goddess: "Bagalamukhi",
     color: "bg-yellow-200",
-    meaning: "Paralyzer of enemies, goddess of speech.",
+    description:
+      "The paralyzer of enemies and controller of speech. She grants victory in debates and silence to negativity.",
+    direction: "West",
+    preposition: "Power of Speech and Paralyzer of enemies",
     image: bagalamukhiImg,
   },
   {
     goddess: "Matangi",
     color: "bg-green-100",
-    meaning: "Goddess of inner wisdom and speech.",
+    description:
+      "The goddess of inner wisdom, music, and speech. Patron of learning and creativity.",
+    direction: "Northeast",
+    preposition: "Wisdom & Expression",
     image: matangiImg,
   },
   {
     goddess: "Kamala",
     color: "bg-orange-100",
-    meaning: "Lotus goddess, form of Lakshmi (prosperity).",
+    description:
+      "The lotus goddess of prosperity, purity, and compassion. She represents the wealth and grace of Lakshmi.",
+    direction: "Everywhere (All Directions)",
+    preposition: "Prosperity & Grace",
     image: kamalaImg,
   },
 ];
 
-const mahavidyaText = `The Dasa Mahavidya (Sanskrit: दस महाविद्या) literally means the “Ten Great Wisdom Goddesses” in Hinduism. They are ten powerful manifestations of Divine Mother (Shakti or Devi), each representing a unique aspect of cosmic power, spiritual knowledge, and transformation. These goddesses are especially significant in Tantric traditions and are often worshipped for spiritual liberation, protection, and insight. Key Points About Dasa Mahavidya: - They represent different spiritual paths—some are benevolent, some are fierce. - Worship can be for material benefits (like wealth, success) or spiritual growth (like liberation and wisdom). - Each Mahavidya has distinct iconography, mantras, and rituals. - The Dasa Mahavidya are considered Tantric forms of Goddess Durga, showing her cosmic and transcendent power.`;
+const mahavidyaText = `
+    The Dasa Mahavidya (Ten Great Wisdom Goddesses) are ten forms of the Divine Mother, 
+    symbolizing different aspects of cosmic power and spiritual wisdom. They guide devotees 
+    toward liberation, protection, and transformation.
+    The Dasa Mahavidya story describes how Goddess Sati, in a fit of anger and to prove her 
+    divine status to her husband Shiva, manifests as ten terrifying forms (the Dasa Mahavidyas) 
+    to prevent Shiva from leaving after he forbids her from attending her father Daksha's sacrificial ceremony. 
+    Sati feels Shiva is treating her as an ordinary woman and not the Mother of the Universe, leading her to 
+    demonstrate her true, supreme power by creating these ten forms, one for each direction, thus blocking Shiva's 
+    escape and making him aware of her infinite, divine might.
+`;
 
 const DasaMahavidya = () => {
   return (

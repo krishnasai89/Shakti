@@ -1,0 +1,70 @@
+{
+  "title": "Ashta Lakshmi – The Eight Forms of Goddess Lakshmi",
+  "text": "Ashta Lakshmi represents the eight divine manifestations of Goddess Lakshmi. Each form blesses devotees with a unique type of wealth — from material riches to knowledge, courage, and spiritual prosperity. Together, they symbolize a complete and balanced life.",
+  "items": [
+    {
+      "goddess": "Adi Lakshmi",
+      "description": "The primal form of Goddess Lakshmi — the eternal source of all wealth, strength, and spiritual power. She blesses devotees with calmness, devotion, and perseverance.",
+      "direction": "East",
+      "preposition": "Origin / Beginning",
+      "color": "bg-orange-100",
+      "image": "/images/adi-lakshmi.jpg"
+    },
+    {
+      "goddess": "Dhana Lakshmi",
+      "description": "The goddess of material wealth, fortune, and prosperity. She bestows abundance in gold, money, and luxurious comforts.",
+      "direction": "Southeast",
+      "preposition": "Wealth / Prosperity",
+      "color": "bg-yellow-100",
+      "image": "/images/dhana-lakshmi.jpg"
+    },
+    {
+      "goddess": "Dhanya Lakshmi",
+      "description": "The giver of agricultural wealth and nourishment. She blesses devotees with food, grains, and healthy living.",
+      "direction": "South",
+      "preposition": "Grain / Nourishment",
+      "color": "bg-green-100",
+      "image": "/images/dhanya-lakshmi.jpg"
+    },
+    {
+      "goddess": "Gaja Lakshmi",
+      "description": "The goddess of power and royalty, often depicted with elephants. She grants authority, strength, fame, and success.",
+      "direction": "Southwest",
+      "preposition": "Power / Strength",
+      "color": "bg-blue-100",
+      "image": "/images/gaja-lakshmi.jpg"
+    },
+    {
+      "goddess": "Santana Lakshmi",
+      "description": "The bestower of progeny and family happiness. She blesses devotees with healthy children, fertility, and family harmony.",
+      "direction": "West",
+      "preposition": "Progeny / Family",
+      "color": "bg-pink-100",
+      "image": "/images/santana-lakshmi.jpg"
+    },
+    {
+      "goddess": "Veera Lakshmi",
+      "description": "The goddess of courage, valor, and strength in facing challenges. She gives determination, fearlessness, and the will to act righteously.",
+      "direction": "Northwest",
+      "preposition": "Valor / Courage",
+      "color": "bg-red-100",
+      "image": "/images/veera-lakshmi.jpg"
+    },
+    {
+      "goddess": "Vijaya Lakshmi",
+      "description": "The goddess of victory and success. She ensures triumph in all endeavors — spiritual, material, and professional.",
+      "direction": "North",
+      "preposition": "Victory / Success",
+      "color": "bg-purple-100",
+      "image": "/images/vijaya-lakshmi.jpg"
+    },
+    {
+      "goddess": "Vidya Lakshmi",
+      "description": "The goddess of knowledge, wisdom, and learning. She blesses with clarity, intelligence, and understanding of truth.",
+      "direction": "Northeast",
+      "preposition": "Knowledge / Education",
+      "color": "bg-indigo-100",
+      "image": "/images/vidya-lakshmi.jpg"
+    }
+  ]
+}

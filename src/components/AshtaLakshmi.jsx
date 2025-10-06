@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { FaLocationArrow, FaStar, FaVolumeUp } from "react-icons/fa";
+import { FaSearchLocation, FaStar, FaVolumeUp } from "react-icons/fa";
+import ashtaLakshmiData from "../assets/ashtaLakshmi.json"; // ✅ JSON import
 
-const FestivalGrid = ({ title, text, items }) => {
+const AshtaLakshmi = () => {
   const [showPopup, setShowPopup] = useState(false);
+
+  // ✅ Extract data from JSON
+  const { title, text, items } = ashtaLakshmiData;
 
   const handleSpeak = () => {
     if (!text) return;
@@ -19,12 +23,12 @@ const FestivalGrid = ({ title, text, items }) => {
       <div className="container mx-auto text-center">
         {/* Heading */}
         <h2
-          className="text-2xl font-bold text-orange-600 mb-6 cursor-pointer"
+          className="text-2xl font-bold text-orange-600 cursor-pointer"
           onClick={() => setShowPopup(true)}
         >
           {title}
         </h2>
-
+        <div className="p-1 bg-orange-600 rounded-2xl w-40 mx-auto my-2"></div>
         {/* Popup */}
         {showPopup && (
           <div className="fixed inset-0 bg-black/40 flex items-center justify-center p-4 z-50">
@@ -59,9 +63,8 @@ const FestivalGrid = ({ title, text, items }) => {
             </div>
           </div>
         )}
-
         {/* Grid */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-6">
           {items.map((item, index) => (
             <motion.div
               key={index}
@@ -72,16 +75,16 @@ const FestivalGrid = ({ title, text, items }) => {
             >
               <img
                 src={item.image}
-                alt={item.goddess || item.day}
+                alt={item.goddess}
                 className="w-full h-[20rem] object-cover rounded-md mb-2"
               />
-              <h3 className="font-bold text-lg">{item.day || item.goddess}</h3>
+              <h3 className="font-bold text-lg">{item.goddess}</h3>
               <p className="text-gray-600 text-sm mt-1 pb-2">
                 {item.description}
               </p>
               <div className="grid grid-cols-2 justify-between items-center text-gray-600 text-sm mt-auto pt-3 border-t">
-                <span className=" flex items-center gap-1 text-sm">
-                  <FaLocationArrow /> Direction: {item.direction}
+                <span className="flex items-center gap-1 text-sm">
+                  <FaSearchLocation /> Direction: {item.direction}
                 </span>
                 <span className="flex items-center gap-1 text-sm">
                   <FaStar /> Preposition: {item.preposition}
@@ -95,4 +98,4 @@ const FestivalGrid = ({ title, text, items }) => {
   );
 };
 
-export default FestivalGrid;
+export default AshtaLakshmi;

@@ -49,7 +49,7 @@ const Navbar = () => {
       </header>
 
       {/* Mobile Navbar (Bottom) */}
-      <nav className="md:hidden fixed bottom-0 left-0 w-full bg-gradient-to-r from-orange-400 to-red-500 text-white shadow-lg">
+      <nav className="md:hidden fixed bottom-0 left-0 w-full bg-gradient-to-r from-orange-400 to-red-500 text-white shadow-lg z-20">
         <div className="flex justify-around items-center p-2">
           <Link
             to="/"

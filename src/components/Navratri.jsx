@@ -12,7 +12,6 @@ import {
   FaBullhorn,
   FaMusic,
 } from "react-icons/fa"; // just examples, choose appropriate
-
 import day1Img from "../assets/navratri/Shailaputri.png";
 import day2Img from "../assets/navratri/Brahmacharini.png";
 import day3Img from "../assets/navratri/chandraghanta.jpg";
@@ -23,6 +22,7 @@ import day7Img from "../assets/navratri/Kalaratri.png";
 import day8Img from "../assets/navratri/Mahagauri.png";
 import day9Img from "../assets/navratri/Siddhidhatri.png";
 import day10Img from "../assets/navratri/Vijayadashami.png";
+import Vijaydashmi from "../assets/gallery/Vijaydashmi.png";
 import day1 from "../assets/gallery/Sri Vidya/Bala Tripura Sundari.png";
 import day2 from "../assets/gallery/Sri Vidya/Gayatri.jpg";
 import day3 from "../assets/gallery/Sri Vidya/Annapoorna.png";
@@ -36,7 +36,6 @@ import day10 from "../assets/gallery/Sri Vidya/Vijaya Dasami.png";
 
 export default function Navaratri() {
   const [activeDay, setActiveDay] = useState(1);
-
   // Normal Navadurga (North India)
   const normalDays = [
     {
@@ -142,7 +141,6 @@ export default function Navaratri() {
       color: "bg-yellow-50",
     },
   ];
-
   // Sri Vidya Devi icons (examples)
   const sriVidyaDays = [
     {
@@ -242,19 +240,115 @@ export default function Navaratri() {
 
   return (
     <div className="mx-auto p-6">
+      {/* Dussehra Festival */}
+      <div className="py-2 mb-3">
+        <div className="text-center">
+          <h2 className="text-3xl font-extrabold text-pink-900 mb-2">
+            Dussehra Festival
+          </h2>
+          <div className="p-1 bg-pink-900 rounded-2xl w-80 mx-auto my-2"></div>
+        </div>
+        <div className="grid gap-6 md:grid-cols-3 my-4">
+          <section className="relative w-full max-w-md mx-auto rounded-xl overflow-hidden shadow-md hover:shadow-2xl">
+            {/* Image */}
+            <img
+              src={day10Img}
+              alt="Story of Goddess Durga"
+              className="w-full h-[36rem] object-cover"
+            />
+
+            {/* Overlay with text */}
+            <div className="absolute inset-0 bg-black bg-opacity-70 text-white p-6 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+              <div>
+                <h3 className="text-xl font-bold mb-2">
+                  Story of Goddess Durga (Durga vs. Mahishasura)
+                </h3>
+                <p className="text-sm leading-relaxed">
+                  Dussehra commemorates the victory of Goddess Durga over the
+                  buffalo demon Mahishasura. The battle lasted for nine days,
+                  and on the tenth day, Durga killed Mahishasura, which is
+                  celebrated as Vijayadashami. This story is also the basis for
+                  the Navratri festival that precedes Dussehra.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section className="relative w-full max-w-md mx-auto rounded-xl overflow-hidden shadow-md hover:shadow-2xl">
+            {/* Image */}
+            <img
+              src={Vijaydashmi}
+              alt="Rama Story"
+              className="w-full h-[36rem] object-cover"
+            />
+            {/* Overlay with text */}
+            <div className="absolute inset-0 bg-black bg-opacity-70 text-white p-6 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+              <div>
+                <h3 className="text-xl font-bold mb-2">
+                  Story of Rama (Ramayana)
+                </h3>
+                <p className="text-sm leading-relaxed">
+                  Dussehra celebrates the victory of Lord Rama over the demon
+                  king Ravana. According to the Ramayana, Ravana abducted Sita,
+                  Rama's wife, and took her to his kingdom Lanka. After a fierce
+                  battle that lasted for ten days, Rama defeated Ravana on the
+                  tenth day, which is celebrated as Dussehra.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section className="px-10 py-8 rounded-xl shadow-md hover:shadow-2xl space-y-3">
+            {/* Title */}
+            <h2 class="text-2xl font-bold text-center text-red-700">
+              10-Day Celebration of Dussehra / Navratri
+            </h2>
+            {/* Introduction */}
+            <p class="text-gray-700 text-lg">
+              Dussehra, also called Vijayadashami, is a ten-day festival
+              celebrated across India, marking the victory of good over evil. It
+              combines both Navratri, the nine nights dedicated to Goddess
+              Durga, and Vijayadashami, celebrating Lord Rama’s triumph over
+              Ravana.
+            </p>
+            <ol className="list-decimal">
+              <li>
+                <b>Day 1-9 (Navratri): </b>
+                <span className="font-extralight">
+                  Nine nights dedicated to the nine forms of Goddess Durga
+                </span>
+              </li>
+              <li>
+                <b>Day 10 (Vijayadashami): </b>
+                <span className="font-extralight">
+                  The final day celebrating the victory of good over evil
+                </span>
+              </li>
+            </ol>
+            <p class="text-gray-700 text-lg">
+              During these ten days, devotees observe fasts, perform special
+              pujas, and participate in cultural events. In many parts of India,
+              elaborate processions and theatrical performances of the Ramayana
+              (Ramlila) are organized.
+            </p>
+          </section>
+        </div>
+      </div>
+      {/* 10 Days of Dussehra / Navaratri Celebration */}
       <div className="text-center">
         <h2 className="text-2xl font-extrabold text-pink-900 mb-2">
           10 Days of Dussehra / Navaratri Celebration
         </h2>
-        <div className="p-1 bg-pink-900 rounded-2xl w-40 mx-auto mt-1"></div>
+        <p className="font-extralight text-gray-900">
+          The festival is celebrated over ten days, with each day dedicated to a
+          different form of the Divine Mother and specific rituals.
+        </p>
+        <div className="p-1 bg-pink-900 rounded-2xl w-80 mx-auto mt-4"></div>
       </div>
-
       {/* Tabs */}
       <div className="flex space-x-4 border-b border-pink-200 mb-6 overflow-x-auto">
         {Array.from({ length: 10 }, (_, i) => (
           <button
             key={i + 1}
-            className={`px-4 py-2 text-sm font-semibold transition ${
+            className={`px-5 py-2 my-4 text-sm font-medium transition ${
               activeDay === i + 1
                 ? "border-b-2 border-pink-600 text-pink-700"
                 : "text-pink-500 hover:text-pink-700"
@@ -265,13 +359,12 @@ export default function Navaratri() {
           </button>
         ))}
       </div>
-
       {/* Content */}
       <div className="grid gap-6 md:grid-cols-2">
         {/* Navadurga */}
         <div>
           <h3 className="text-lg font-bold text-pink-700 mb-3">
-            Navadurga Worship (North India)
+            Navadurga Worship (Northern Part of India)
           </h3>
           <div
             className={`p-5 rounded-lg shadow-lg hover:shadow-xl ${normalDay?.color}`}
@@ -304,11 +397,10 @@ export default function Navaratri() {
             )}
           </div>
         </div>
-
         {/* Sri Vidya */}
         <div>
           <h3 className="text-lg font-bold text-pink-700 mb-3">
-            Sri Vidya / Shakta Worship (South India)
+            Sri Vidya / Shakta Worship (Southern Part of India)
           </h3>
           <div className="bg-white p-5 rounded-lg shadow-lg hover:shadow-xl">
             {sriVidyaDay && (
