@@ -122,6 +122,8 @@ const DasaMahavidya = () => {
       title="Dasa Mahavidya – 10 Great Wisdom Goddesses"
       text={mahavidyaText}
       items={mahavidyas}
+      videoSrc="https://www.instagram.com/reel/DOWdLy0Erse/embed"
+      imgSrc={""}
     />
   );
 };

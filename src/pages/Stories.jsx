@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import dasastories from "../assets/Dasarastories";
 
-// Ramayana Kandas with multi-paragraph Bala Kanda
-
 const Stories = () => {
   const [activeMainTab, setActiveMainTab] = useState("ramayana");
   const [activeSubTab, setActiveSubTab] = useState(

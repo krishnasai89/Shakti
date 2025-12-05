@@ -8,7 +8,7 @@ import navratriVideo from "../assets/gallery/Navratri.mp4";
 
 const Header = () => {
   const [videoStarted, setVideoStarted] = useState(false);
-  const [setVideoEndedOnce] = useState(false);
+  const [videoEndedOnce, setVideoEndedOnce] = useState(false);
   const [muted, setMuted] = useState(false);
   const sliderRef = useRef(null);
   const videoRef = useRef(null);

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   FaLeaf,
   FaAppleAlt,
@@ -14,7 +15,7 @@ import {
 } from "react-icons/fa"; // just examples, choose appropriate
 import day1Img from "../assets/navratri/Shailaputri.png";
 import day2Img from "../assets/navratri/Brahmacharini.png";
-import day3Img from "../assets/navratri/chandraghanta.jpg";
+import day3Img from "../assets/navratri/chandraghanta.png";
 import day4Img from "../assets/navratri/Kushmanda.png";
 import day5Img from "../assets/navratri/Skandamata.png";
 import day6Img from "../assets/navratri/Katyayani.png";
@@ -254,23 +255,23 @@ export default function Navaratri() {
             <img
               src={day10Img}
               alt="Story of Goddess Durga"
-              className="w-full h-[36rem] object-cover"
+              className="w-full h-full object-cover"
             />
 
             {/* Overlay with text */}
-            <div className="absolute inset-0 bg-black bg-opacity-70 text-white p-6 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-              <div>
-                <h3 className="text-xl font-bold mb-2">
+            <div className="absolute inset-0 bg-black bg-opacity-70 text-white p-6 items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+              <h3 className="text-xl font-bold mb-2">
+                <Link to="/stories">
                   Story of Goddess Durga (Durga vs. Mahishasura)
-                </h3>
-                <p className="text-sm leading-relaxed">
-                  Dussehra commemorates the victory of Goddess Durga over the
-                  buffalo demon Mahishasura. The battle lasted for nine days,
-                  and on the tenth day, Durga killed Mahishasura, which is
-                  celebrated as Vijayadashami. This story is also the basis for
-                  the Navratri festival that precedes Dussehra.
-                </p>
-              </div>
+                </Link>
+              </h3>
+              <p className="text-sm leading-relaxed">
+                Dussehra commemorates the victory of Goddess Durga over the
+                buffalo demon Mahishasura. The battle lasted for nine days, and
+                on the tenth day, Durga killed Mahishasura, which is celebrated
+                as Vijayadashami. This story is also the basis for the Navratri
+                festival that precedes Dussehra.
+              </p>
             </div>
           </section>
           <section className="relative w-full max-w-md mx-auto rounded-xl overflow-hidden shadow-md hover:shadow-2xl">
@@ -278,31 +279,29 @@ export default function Navaratri() {
             <img
               src={Vijaydashmi}
               alt="Rama Story"
-              className="w-full h-[36rem] object-cover"
+              className="w-full h-full object-cover"
             />
             {/* Overlay with text */}
-            <div className="absolute inset-0 bg-black bg-opacity-70 text-white p-6 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-              <div>
-                <h3 className="text-xl font-bold mb-2">
-                  Story of Rama (Ramayana)
-                </h3>
-                <p className="text-sm leading-relaxed">
-                  Dussehra celebrates the victory of Lord Rama over the demon
-                  king Ravana. According to the Ramayana, Ravana abducted Sita,
-                  Rama's wife, and took her to his kingdom Lanka. After a fierce
-                  battle that lasted for ten days, Rama defeated Ravana on the
-                  tenth day, which is celebrated as Dussehra.
-                </p>
-              </div>
+            <div className="absolute inset-0 bg-black bg-opacity-70 text-white p-6 items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+              <h3 className="text-xl font-bold mb-2">
+                <Link to="/stories">Story of Rama (Ramayana)</Link>
+              </h3>
+              <p className="text-sm leading-relaxed">
+                Dussehra celebrates the victory of Lord Rama over the demon king
+                Ravana. According to the Ramayana, Ravana abducted Sita, Rama's
+                wife, and took her to his kingdom Lanka. After a fierce battle
+                that lasted for ten days, Rama defeated Ravana on the tenth day,
+                which is celebrated as Dussehra.
+              </p>
             </div>
           </section>
           <section className="px-10 py-8 rounded-xl shadow-md hover:shadow-2xl space-y-3">
             {/* Title */}
-            <h2 class="text-2xl font-bold text-center text-red-700">
+            <h2 className="text-2xl font-bold text-center text-red-700">
               10-Day Celebration of Dussehra / Navratri
             </h2>
             {/* Introduction */}
-            <p class="text-gray-700 text-lg">
+            <p className="text-gray-700 text-lg">
               Dussehra, also called Vijayadashami, is a ten-day festival
               celebrated across India, marking the victory of good over evil. It
               combines both Navratri, the nine nights dedicated to Goddess
@@ -323,7 +322,7 @@ export default function Navaratri() {
                 </span>
               </li>
             </ol>
-            <p class="text-gray-700 text-lg">
+            <p className="text-gray-700 text-lg">
               During these ten days, devotees observe fasts, perform special
               pujas, and participate in cultural events. In many parts of India,
               elaborate processions and theatrical performances of the Ramayana
@@ -362,7 +361,7 @@ export default function Navaratri() {
       {/* Content */}
       <div className="grid gap-6 md:grid-cols-2">
         {/* Navadurga */}
-        <div>
+        <div className="p-2">
           <h3 className="text-lg font-bold text-pink-700 mb-3">
             Navadurga Worship (Northern Part of India)
           </h3>

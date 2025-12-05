@@ -1,0 +1,8 @@
+make a prompt for cloth like  
+{{night pants: Black,gray,say blue,brown,; }
+{T-Shirt: Marun, black, gray, say blue, yellow,pink, pink+black line by line, Red top side + blue down side of t-shirt, green,an other green with military, blue + say blue line by line; }
+{Jean's Pants: Black, blue, light blue and olvo green;}
+{Cotton Jean's pants: black, bisket/ beige colour, black with blue check prattern;
+normal pants: black, gray;}
+{Shirt: light beige, pupule,Dark blue,say blue with tiny check lines, yellow with blue check lines, Red + blue check line, blue with black check lines,merun + blue check lines + white check lines, black and gray line by line , blue with white check lines, say blue with black sankrit letters}}
+give me the what,why, example to easy to understand this combination and where it fit like main funtions, small futions, office, etc.
